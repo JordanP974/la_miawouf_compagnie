@@ -1,0 +1,29 @@
+footer{
+  margin-top: auto;
+  background: var(--bordeaux-dark);
+color var(--blanc);
+  padding: var(--sp-12) 0;
+}
+
+section{
+  display: flex;
+  flex-direction: row;
+}
+.footer-title{
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--blanc);
+  margin-bottom: var(--sp-4);
+  width: 100%;
+}
+
+article{
+  display: flex;
+  flex-direction: column;
+  padding: var(--sp-8);
+  color: #c9aeb5;
+  p{
+    width: 100%;
+    color: var(--blanc);
+  }
+}
