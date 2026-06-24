@@ -1,4 +1,5 @@
 import { FaFacebook } from 'react-icons/fa';
+import "./FacebookBtn.css"
 
 function FacebookBtn() {
   return (
@@ -8,7 +9,7 @@ function FacebookBtn() {
       rel="noopener noreferrer"
       className="fcb-btn"
     >
-      <FaFacebook />
+      <FaFacebook size={20}/> Suivez-nous sur Facebook
     </a>
   );
 }

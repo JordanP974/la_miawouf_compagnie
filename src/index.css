@@ -5,7 +5,7 @@
   --bordeaux-dark:  #4A1826;
   --bordeaux-vif:   #B23A52;
   --rose:           #B2667A;
-  --blush:          #F5E6E9;
+--blush:          #A2828C;
   --ivoire:         #FAF3F0;
   --or:             #F0D49A;
   --encre:          #2A302B;
@@ -116,7 +116,7 @@ a {
 }
 
 a:hover {
-  color: var(--bordeaux);
+  color: var(--or);
 }
 
 small {

@@ -31,6 +31,7 @@ function Header() {
         <NavLink to={"/a-propos"} className={"nav-about"} onClick={closeMenu}>À propos</NavLink>
         <NavLink to={"/compétences"} className={"nav-skills"} onClick={closeMenu}>Compétences</NavLink>
         <NavLink to={"/services"} className={"nav-services"} onClick={closeMenu}>Services</NavLink>
+        <NavLink to={"/contact"}  onClick={closeMenu}>Contact</NavLink>
         <NavLink to={"/contact"} className={"nav-contact"} onClick={closeMenu}>Demander un devis</NavLink>
       </nav>
     </header>

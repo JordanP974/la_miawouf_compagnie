@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import FacebookBtn from "../FacebookBtn/FacebookBtn";
+import logo from "../../assets/laMiaWoufCompagnie_Logo.png"
 
 import "./Footer.css"
 
@@ -8,14 +9,17 @@ function Footer(){
     <footer>
       <section className="footer-sections">
       <article className="footer-title">
-        <img src="../../assets/laMiaWoufCompagnie_Logo.png" alt="Logo" />
-        <h3 className="title">La MiaWouf Compagnie</h3>
+        <div className="footer-logo">
+          <img src={logo} alt="Logo" />
+          <h3 className="title">La MiaWouf Compagnie</h3>
+        </div>
         <p>Chez La MiaWouf Compagnie, vos animaux sont nos amis. Garde à domicile et promenade, avec passion et sérieux.</p>
       </article>
         <article className="section-nav">
           <h3 className="section-title">Navigation</h3>
           <NavLink to={"/#"} className={"nav"}>Accueil</NavLink>
           <NavLink to={"/#"} className={"nav"}>À propos</NavLink>
+          <NavLink to={"/#"} className={"nav"}>Compétences</NavLink>
           <NavLink to={"/#"} className={"nav"}>Services</NavLink>
           <NavLink to={"/#"} className={"nav"}>Demander un devis</NavLink>
           </article>
@@ -30,8 +34,8 @@ function Footer(){
           <h3 className="section-title">Contact</h3>
           <a href="tel:06 37 94 90 46">06 37 94 90 46</a>
           <a href="mailto:lamiawoufcompagnie@gmail.com">lamiawoufcompagnie@gmail.com</a>
-          <p>Villoncourt (88) et alentours</p>
-          <NavLink to={"/#"} className={"nav"}>Demander un devis</NavLink>
+          <a href="/contact">Villoncourt (88) et alentours</a>
+          
           <FacebookBtn/>
           </article>
       </section>
