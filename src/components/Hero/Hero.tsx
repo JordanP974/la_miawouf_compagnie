@@ -20,7 +20,7 @@ function Hero() {
             gratuitement par le ramassage du courrier, l’arrosage des plantes et la gestion des volets.
           </p>
         </div>
-        <div className="hero-btn">
+        <div className="hero-btns">
           <NavLink to={'/contact'} className={'btn-reserve'}>
             Réserver une garde
           </NavLink>
@@ -30,10 +30,10 @@ function Hero() {
         </div>
         <div className="hero-certif">
           <p className="certif">
-            <FaCheckCircle /> Certificat de capacité
+            <FaCheckCircle size={15} color={"var(--rose)"}/> Certificat de capacité
           </p>
           <p className="certif">
-            <FaCheckCircle /> Passionné depuis l’enfance
+            <FaCheckCircle size={15} color={"var(--rose)"} /> Passionné depuis l’enfance
           </p>
         </div>
       </section>
