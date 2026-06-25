@@ -75,17 +75,25 @@
 
 /* ===== NAV — mobile (caché par défaut) ===== */
 .nav-bar {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 0fr;
   width: 100%;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease, padding 0.3s ease;
-  padding: 0 var(--sp-2);
+  transition: grid-template-rows 0.3s ease;
 }
 
 .nav-bar--open {
-  max-height: 400px;
+  grid-template-rows: 1fr;
+}
+
+.nav-inner {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 0 var(--sp-2);
+  gap: 2px;
+}
+
+.nav-bar--open .nav-inner {
   padding: var(--sp-3) var(--sp-2) var(--sp-4);
 }
 
@@ -140,18 +148,16 @@
   }
 
   .nav-bar {
+    display: flex;
     flex-direction: row;
     align-items: center;
     width: auto;
-    max-height: none;
-    overflow: visible;
     margin-left: auto;
-    padding: 0;
     gap: var(--sp-2);
   }
 
-  .nav-bar--open {
-    padding: 0;
+  .nav-inner {
+    display: contents;
   }
 
   .nav-contact {

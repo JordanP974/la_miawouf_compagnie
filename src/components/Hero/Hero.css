@@ -1,0 +1,19 @@
+.hero-container {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: var(--sp-4);
+}
+
+.hero-pill{
+  background-color: var(--blush);
+  text-align: center;
+  font-size: 14px;
+  border-radius: var(--r-pill);
+  padding: 8px 10px;
+}
+
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  padding: 0 var(--sp-4);
+}
