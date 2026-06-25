@@ -102,7 +102,7 @@
 .nav-bar a:hover,
 .nav-bar a.active {
   color: var(--bordeaux);
-  background: var(--blush);
+  
 }
 
 .nav-contact {
@@ -115,6 +115,7 @@
 
 .nav-contact:hover {
   background: var(--bordeaux) !important;
+  color: var(--or) !important;
   opacity: 1 !important;
 }
 
