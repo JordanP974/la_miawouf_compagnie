@@ -99,8 +99,8 @@ article {
   }
 }
 
-/* ===== DESKTOP (≥ 768px) ===== */
-@media (min-width: 768px) {
+/* ===== DESKTOP (≥ 1024px) — attend d'avoir assez de largeur pour le bloc logo fixe ===== */
+@media (min-width: 1024px) {
   footer {
     padding: 2rem 3rem 1rem;
   }

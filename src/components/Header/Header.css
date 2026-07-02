@@ -2,7 +2,7 @@
 
 .header {
   background: var(--ivoire);
-  border-bottom: 1px solid var(--bordure);
+  
   padding: var(--sp-3) var(--sp-4);
   display: flex;
   align-items: center;
