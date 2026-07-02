@@ -66,6 +66,8 @@ body {
   min-height: 100svh;
   display: flex;
   flex-direction: column;
+  margin: 0 10rem;
+  
 }
 
 /* ===== TYPOGRAPHIE ===== */
@@ -297,6 +299,9 @@ section:first-of-type {
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
+  #root {
+    padding: 0 ;
+  }
   h1 {
     font-size: 34px;
   }

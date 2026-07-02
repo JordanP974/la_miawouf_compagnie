@@ -12,6 +12,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: var(--r-m);
+  ;
+  overflow: hidden;
 
   img {
     width: 100%;
@@ -19,7 +22,7 @@
     max-height: 500px;
     object-fit: cover;
     object-position: top;
-    border-radius: var(--r-m);
+    
   }
 }
 

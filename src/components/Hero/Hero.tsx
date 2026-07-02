@@ -37,8 +37,8 @@ function Hero() {
           </p>
         </div>
       </section>
-      <section className="hero-img">
-        <img src={imgHero} alt="image principale d'un berger blanc suisse" />
+      <section className="hero-img ">
+        <img className='shadow' src={imgHero} alt="image principale d'un berger blanc suisse" />
       </section>
     </div>
   );
