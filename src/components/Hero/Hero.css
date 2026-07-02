@@ -1,33 +1,54 @@
 /* ===== HERO — mobile first ===== */
 
 .hero-container {
+  position: relative;
   display: flex;
   flex-direction: column;
-  gap: var(--sp-6);
+  gap: var(--sp-8);
   padding: var(--sp-8) var(--sp-4);
+  background: linear-gradient(180deg, var(--blush) 0%, rgba(245, 230, 233, 0) 65%);
+  border-radius: var(--r-l);
+  overflow: hidden;
 }
 
 /* ===== IMAGE ===== */
 .hero-img {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: var(--r-m);
-  ;
-  overflow: hidden;
 
   img {
     width: 100%;
     max-width: 360px;
-    max-height: 500px;
+    aspect-ratio: 4 / 5;
     object-fit: cover;
     object-position: top;
-    
+    border-radius: var(--r-m);
   }
+}
+
+.hero-img-decor {
+  position: absolute;
+  inset: -10% -10% auto auto;
+  width: 70%;
+  aspect-ratio: 1;
+  background: radial-gradient(circle, var(--or) 0%, rgba(240, 212, 154, 0) 70%);
+  opacity: 0.5;
+  filter: blur(10px);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.hero-img img {
+  position: relative;
+  z-index: 1;
 }
 
 /* ===== INFOS ===== */
 .hero-info {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   gap: var(--sp-4);
@@ -35,15 +56,26 @@
 
 .hero-pill {
   align-self: flex-start;
-  background-color: var(--blush);
+  background-color: var(--blanc);
+  color: var(--bordeaux);
+  font-weight: 600;
   font-size: 13px;
+  border: 1px solid var(--bordure);
   border-radius: var(--r-pill);
   padding: 6px 14px;
+  display: inline-flex;
+  align-items: center;
+
+  p {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
 }
 
 .hero-intro {
   .hero-title {
-    font-size: 32px;
+    font-size: clamp(30px, 7vw, 34px);
     margin-bottom: var(--sp-2);
     line-height: 1.15;
   }
@@ -52,6 +84,7 @@
     font-size: 15px;
     line-height: 1.6;
     color: var(--gris);
+    max-width: 46ch;
   }
 }
 
@@ -60,6 +93,23 @@
   flex-direction: column;
   gap: var(--sp-3);
 
+  .btn-reserve,
+  .btn-services {
+    transition:
+      background-color 0.2s,
+      color 0.2s,
+      transform 0.15s ease,
+      box-shadow 0.15s ease;
+
+    &:hover {
+      transform: translateY(-2px);
+    }
+
+    &:active {
+      transform: translateY(0);
+    }
+  }
+
   .btn-reserve {
     background-color: var(--bordeaux-dark);
     color: var(--blanc);
@@ -67,11 +117,12 @@
     text-decoration: none;
     font-weight: 600;
     text-align: center;
-    padding: 12px 16px;
-    transition: background-color 0.2s;
+    padding: 14px 16px;
+    box-shadow: 0 8px 20px rgba(74, 24, 38, 0.25);
 
     &:hover {
       background-color: var(--bordeaux-vif);
+      box-shadow: 0 10px 24px rgba(74, 24, 38, 0.3);
     }
   }
 
@@ -82,10 +133,8 @@
     text-decoration: none;
     font-weight: 600;
     text-align: center;
-    padding: 12px 16px;
-    transition:
-      background-color 0.2s,
-      color 0.2s;
+    padding: 14px 16px;
+    background-color: var(--blanc);
 
     &:hover {
       background-color: var(--blush);
@@ -98,6 +147,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   gap: var(--sp-2);
+  margin-top: var(--sp-2);
 
   .certif {
     display: flex;
@@ -105,7 +155,11 @@
     gap: var(--sp-1);
     font-size: 13px;
     font-weight: 600;
-    color: var(--gris);
+    color: var(--bordeaux-dark);
+    background: var(--blanc);
+    border: 1px solid var(--bordure);
+    border-radius: var(--r-pill);
+    padding: 8px 14px;
   }
 }
 
@@ -113,17 +167,24 @@
 @media (min-width: 768px) {
   .hero-container {
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: space-between;
     gap: var(--sp-12);
     padding: var(--sp-16) var(--sp-8);
+    min-height: 560px;
   }
 
   .hero-info {
     flex: 1;
+    gap: var(--sp-6);
   }
 
   .hero-intro .hero-title {
-    font-size: 50px;
+    font-size: clamp(40px, 4.5vw, 58px);
+  }
+
+  .hero-intro p {
+    font-size: 17px;
   }
 
   .hero-btns {
@@ -132,7 +193,7 @@
     .btn-reserve,
     .btn-services {
       width: auto;
-      padding: 12px 24px;
+      padding: 16px 28px;
     }
   }
 
@@ -140,10 +201,8 @@
     flex-shrink: 0;
 
     img {
-      width: 100%;
-      max-width: 420px;
-      max-height: 450px;
-      
+      width: clamp(360px, 30vw, 460px);
+      max-width: 460px;
     }
   }
 }
