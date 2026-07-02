@@ -17,7 +17,8 @@ export const services = [
       "Respect des autres animaux et passants",
       "Retour au calme et pattes essuyées",
       "Hors chiens de catégorie 1 et 2 (assurance)",
-    ]
+    ],
+    
   },
   {
     title: "Visites & NAC",
@@ -28,5 +29,20 @@ export const services = [
       "Jeux, socialisation et observation",
       "Surveillance de l’état de santé",
     ]
+  }
+]
+
+export const freeServices =[
+  {
+    title: "Courrier",
+    description:"Je relève votre boîte aux lettres pour éviter qu’elle ne déborde pendant votre absence.",
+  },
+  {
+    title: "Plantes",
+    description:"Vos plantes sont arrosées régulièrement pour les retrouver en pleine forme.",
+  },
+  {
+    title: "Volets",
+    description:"Ouverture et fermeture des volets pour simuler une présence et sécuriser le logement.",
   }
 ]
