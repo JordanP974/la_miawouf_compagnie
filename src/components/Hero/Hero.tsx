@@ -10,7 +10,7 @@ function Hero() {
       <section className='hero-info'>
         <div className="hero-pill">
           <p>
-            <PiPawPrintFill /> Garde à domicile · Villoncourt (88) et les alentours
+            <PiPawPrintFill /> Garde à domicile · Villoncourt (88)
           </p>
         </div>
         <div className="hero-intro">
