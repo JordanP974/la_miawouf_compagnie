@@ -127,8 +127,8 @@
   opacity: 1 !important;
 }
 
-/* ===== DESKTOP (≥ 768px) ===== */
-@media (min-width: 768px) {
+/* ===== DESKTOP (≥ 1024px) — burger conservé sur tablette ===== */
+@media (min-width: 1024px) {
   .header {
     padding: var(--sp-3) var(--sp-8);
     flex-wrap: nowrap;
