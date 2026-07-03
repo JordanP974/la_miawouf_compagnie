@@ -22,7 +22,7 @@ export const services = [
   },
   {
     title: "Visites & NAC",
-    description: "Des passages pour nourrir, divertir et veiller sur vos chats, lapins, rongeurs et oiseaux, avec une attention adaptée à chaque espèce.", 
+    description: "Des passages pour nourrir, divertir et veiller sur vos chats, chien, NAC (lapin, rongeur, oiseaux,...), avec une attention adaptée à chaque espèce.", 
     features:[
       "Alimentation adaptée à l’espèce",
       "Nettoyage de la litière ou de la cage",
