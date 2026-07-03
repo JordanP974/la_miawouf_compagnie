@@ -67,7 +67,7 @@ function Services({ showFeatures = false }: ServicesProps) {
         <span className="eyebrow fs-eyebrow">Inclus Gratuitement</span>
         <h2 className="section-title fs-title">Je veille aussi sur votre maison</h2>
         <p className="section-text fs-text">
-          Des prestations adaptées à chaque animal et à chaque besoin, toujours dans le confort de son foyer.
+          Sans supplément, pendant chaque garde à votre domicile.
         </p>
       </div>
 
