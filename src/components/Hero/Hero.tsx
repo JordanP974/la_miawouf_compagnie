@@ -1,18 +1,31 @@
-import { PiPawPrintFill } from 'react-icons/pi';
+import { PiPawPrintFill, PiRabbit, PiCat   } from 'react-icons/pi';
 import { FaCheckCircle } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
 import imgHero from '../../assets/img_samy.avif';
-import "./Hero.css"
+import './Hero.css';
 
 function Hero() {
   return (
-    <div className="hero-container">
-      <section className='hero-info'>
-        <div className="hero-pill">
-          <p>
-            <PiPawPrintFill /> Garde à domicile · Villoncourt (88)
-          </p>
+    <div className="hero-container container">
+      <section className="hero-info">
+        <div className="hero-pill--container">
+          <div className="hero-pill">
+            <p>
+              <PiPawPrintFill /> Chiens
+            </p>
+          </div>
+          <div className="hero-pill">
+            <p>
+              <PiCat  /> Chats
+            </p>
+          </div>
+          <div className="hero-pill">
+            <p>
+              <PiRabbit  /> NAC
+            </p>
+          </div>
         </div>
+
         <div className="hero-intro">
           <h1 className="hero-title">La garde de qualité que votre animal mérite</h1>
           <p className="hero-text">
@@ -30,10 +43,10 @@ function Hero() {
         </div>
         <div className="hero-certif">
           <p className="certif">
-            <FaCheckCircle size={15} color={"var(--rose)"} /> Certificat de capacité
+            <FaCheckCircle size={15} color={'var(--rose)'} /> Certificat de capacité
           </p>
           <p className="certif">
-            <FaCheckCircle size={15} color={"var(--rose)"} /> Passionné depuis l’enfance
+            <FaCheckCircle size={15} color={'var(--rose)'} /> Passionné depuis l’enfance
           </p>
         </div>
       </section>
