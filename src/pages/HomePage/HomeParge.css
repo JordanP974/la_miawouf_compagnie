@@ -1,0 +1,40 @@
+.section-content {
+  max-width: 620px;
+  margin: 0 auto var(--sp-12);
+  text-align: center;
+
+  .eyebrow {
+    justify-content: center;
+  }
+
+  .eyebrow::after {
+    display: none;
+  }
+
+  .section-title {
+    margin-bottom: var(--sp-3);
+  }
+
+  .section-text {
+    color: var(--gris);
+    font-size: 16px;
+  }
+
+  .fs-text {
+    color: var(--ivoire);
+  }
+}
+
+  img {
+    width: 100%;
+    max-width: 360px;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: top;
+    border-radius: var(--r-m);
+  }
+
+  section {
+    padding: var(--sp-12) var(--sp-4);
+  }
+  

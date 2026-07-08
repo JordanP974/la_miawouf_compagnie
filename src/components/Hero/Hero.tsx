@@ -51,7 +51,7 @@ function Hero() {
         </div>
       </section>
       <section className="hero-img">
-        <div className="hero-img-decor" aria-hidden="true"></div>
+        
         <img className="shadow" src={imgHero} alt="image principale d'un berger blanc suisse" />
       </section>
     </div>
