@@ -126,7 +126,5 @@ article {
     height: 100px;
   }
 
-  article:not(.footer-title) {
-    flex: 1 1 auto;
-  }
+  
 }

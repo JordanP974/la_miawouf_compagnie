@@ -28,8 +28,8 @@
 }
 
 .services-cards {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
   gap: var(--sp-6);
 }
 
@@ -106,6 +106,7 @@
   background: var(--bordeaux);
   .fs-eyebrow {
     color: var(--or);
+    
   }
   .fs-title {
     color: var(--blanc);
@@ -133,15 +134,19 @@
 /* ===== DESKTOP LARGE (≥ 1024px) ===== */
 @media (min-width: 1024px) {
   .services-section {
-    display: grid;
-    grid-template-rows: auto 1fr;
+    display: flex;
+    flex-direction: column;
     padding: var(--sp-20) var(--sp-8);
+    
   }
-  .section-content {
-    grid-row: 1;
-  }
+  /* .container {
+    
+  } */
+  
   .services-cards {
-    grid-row: 2;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
   }
 }
