@@ -18,14 +18,7 @@
   justify-content: center;
   align-items: center;
 
-  img {
-    width: 100%;
-    max-width: 360px;
-    aspect-ratio: 4 / 5;
-    object-fit: cover;
-    object-position: top;
-    border-radius: var(--r-m);
-  }
+ 
 }
 
 .hero-img-decor {
@@ -114,37 +107,6 @@
 
     &:active {
       transform: translateY(0);
-    }
-  }
-
-  .btn-reserve {
-    background-color: var(--bordeaux-dark);
-    color: var(--blanc);
-    border-radius: var(--r-s);
-    text-decoration: none;
-    font-weight: 600;
-    text-align: center;
-    padding: 14px 16px;
-    box-shadow: 0 8px 20px rgba(74, 24, 38, 0.25);
-
-    &:hover {
-      background-color: var(--bordeaux-vif);
-      box-shadow: 0 10px 24px rgba(74, 24, 38, 0.3);
-    }
-  }
-
-  .btn-services {
-    border: 1px solid var(--bordeaux-dark);
-    color: var(--bordeaux-dark);
-    border-radius: var(--r-s);
-    text-decoration: none;
-    font-weight: 600;
-    text-align: center;
-    padding: 14px 16px;
-    background-color: var(--blanc);
-
-    &:hover {
-      background-color: var(--blush);
     }
   }
 }

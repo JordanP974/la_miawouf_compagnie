@@ -266,13 +266,12 @@ select:focus {
   padding: 0 var(--sp-8);
 }
 
-section {
-  border-top: 1px solid var(--bordure);
-}
 
-section:first-of-type {
-  border-top: none;
-}
+section {
+    padding: var(--sp-12) var(--sp-4);
+  }
+
+
 
 /* ===== UTILITAIRES ===== */
 .text-bordeaux {

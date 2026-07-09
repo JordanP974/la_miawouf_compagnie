@@ -2,16 +2,17 @@
 
 .header {
   background: var(--ivoire);
-  
   padding: var(--sp-3) var(--sp-4);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 0;
   position: sticky;
   top: 0;
   z-index: 100;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0;
+  }
 }
 
 /* ===== LOGO ===== */
@@ -59,7 +60,9 @@
   height: 2px;
   background: var(--bordeaux);
   border-radius: 2px;
-  transition: transform 0.25s ease, opacity 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    opacity 0.25s ease;
   transform-origin: center;
 }
 
@@ -103,14 +106,15 @@
   color: var(--gris);
   padding: var(--sp-3) var(--sp-3);
   border-radius: var(--r-s);
-  transition: color 0.15s ease, background 0.15s ease;
+  transition:
+    color 0.15s ease,
+    background 0.15s ease;
   text-decoration: none;
 }
 
 .nav-bar a:hover,
 .nav-bar a.active {
   color: var(--bordeaux);
-  
 }
 
 .nav-contact {

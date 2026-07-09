@@ -1,0 +1,106 @@
+.contact {
+  margin: var(--sp-4) var(--sp-4) var(--sp-4);
+  border-radius: var(--r-m);
+}
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-6);
+}
+.contact .section-content {
+  display: flex;
+  flex-direction: column;
+
+  gap: var(--sp-2);
+}
+
+li::marker {
+  content: none;
+}
+
+.contact-infos {
+  display: none;
+}
+.contact-btns {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+}
+
+.contact-infos ul {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-4);
+}
+
+.contact-info-item {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+}
+
+.contact-info-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  border-radius: var(--r-pill);
+  background: var(--bordeaux-light);
+  color: var(--blanc);
+}
+
+.contact-info-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-info-label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--or);
+}
+
+.contact-info-text a {
+  font-weight: 600;
+  color: var(--blanc);
+  transition: color 0.15s ease;
+}
+
+.contact-info-text a:hover {
+  color: var(--or);
+}
+
+@media (min-width: 768px) {
+  .contact {
+    margin: var(--sp-12) 20rem var(--sp-12);
+    justify-content: center;
+    
+  }
+  .contact-container {
+    flex-direction: row;
+    align-items: center;
+
+    justify-content: space-between;
+    gap: var(--sp-12);
+    padding: var(--sp-16) var(--sp-8);
+  }
+  .contact .section-content .eyebrow {
+    justify-content: flex-start;
+  }
+  .contact-btns {
+    flex-direction: row;
+  }
+  .contact-infos {
+    display: block;
+  }
+  .contact .section-content {
+    align-items: flex-start;
+    gap: var(--sp-6);
+    max-width: none;
+    margin: 0;
+  }
+}
