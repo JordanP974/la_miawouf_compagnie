@@ -47,8 +47,13 @@
 /* ===== DESKTOP LARGE (≥ 1024px) ===== */
 
 @media (min-width: 1024px) {
+  .section-about {
+    padding: var(--sp-20) var(--sp-8);
+    justify-content: center;
+  }
   .about-container {
     flex-direction: row;
+    
 
     gap: var(--sp-12);
     padding: var(--sp-16) var(--sp-8);

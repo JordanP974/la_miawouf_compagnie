@@ -1,4 +1,5 @@
 import About from '../../components/About/About';
+import Contact from '../../components/Contact/Contact';
 import Hero from '../../components/Hero/Hero';
 import Services from '../../components/Services/Services';
 
@@ -10,6 +11,7 @@ function HomePage() {
     <Hero />
     <Services/>
     <About/>
+    <Contact/>
   </main>
 );
 }

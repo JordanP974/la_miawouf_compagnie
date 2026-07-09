@@ -81,18 +81,7 @@
   }
 }
 
-.free-services {
-  background: var(--bordeaux);
-  .fs-eyebrow {
-    color: var(--or);
-    
-  }
-  .fs-title {
-    color: var(--blanc);
-  }
-  
-  
-}
+
 .fs-card {
   background: var(--bordeaux-light);
   border:none;
