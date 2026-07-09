@@ -1,18 +1,18 @@
-import About from '../../components/About/About';
-import Contact from '../../components/Contact/Contact';
-import Hero from '../../components/Hero/Hero';
-import Services from '../../components/Services/Services';
+import About from './About/About';
+import Contact from './Contact/Contact';
+import Hero from './Hero/Hero';
+import Services from './Services/Services';
 
-import './HomeParge.css'
+import './HomeParge.css';
 
 function HomePage() {
   return (
-  <main>
-    <Hero />
-    <Services/>
-    <About/>
-    <Contact/>
-  </main>
-);
+    <main>
+      <Hero />
+      <Services />
+      <About />
+      <Contact />
+    </main>
+  );
 }
 export default HomePage;

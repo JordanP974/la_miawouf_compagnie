@@ -34,7 +34,7 @@
 }
 
 .section-content .fs-text, .section-content .contact-text {
-  color: var(--blanc);
+  color: var(--ivoire);
 }
 .btn-reserve, .btn-dark {
     background-color: var(--bordeaux-dark);

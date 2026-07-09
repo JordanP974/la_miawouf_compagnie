@@ -1,4 +1,4 @@
-import photoTroisChiens from '../../assets/trois chiens.jpg';
+import photoTroisChiens from '../../../assets/trois chiens.jpg';
 import { FaCheckCircle } from 'react-icons/fa';
 import './About.css';
 import { NavLink } from 'react-router-dom';

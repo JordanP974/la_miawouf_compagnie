@@ -7,7 +7,8 @@ export const services = [
       "Câlins, jeux et présence rassurante",
       "Litière et espace de vie maintenus propres",
       "Compte rendu et photos réguliers",
-    ]
+    ],
+    pill: "chiens Chat & NAC"
   },
   {
     title: "Promenade",
@@ -18,18 +19,11 @@ export const services = [
       "Retour au calme et pattes essuyées",
       "Hors chiens de catégorie 1 et 2 (assurance)",
     ],
+    pill: "Chiens"
+    
     
   },
-  {
-    title: "Visites & NAC",
-    description: "Des passages pour nourrir, divertir et veiller sur vos chats, chiens, NAC (lapin, rongeur, oiseaux,...), avec une attention adaptée à chaque espèce.", 
-    features:[
-      "Alimentation adaptée à l’espèce",
-      "Nettoyage de la litière ou de la cage",
-      "Jeux, socialisation et observation",
-      "Surveillance de l’état de santé",
-    ]
-  }
+  
 ]
 
 export const freeServices =[

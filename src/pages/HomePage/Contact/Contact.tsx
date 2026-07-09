@@ -1,18 +1,18 @@
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebook } from 'react-icons/fa';
 import type { IconType } from 'react-icons';
-import { contact } from '../../data/contact';
+import { contact } from '../../../data/contact';
 import './Contact.css';
 import { NavLink } from 'react-router-dom';
 
 const contactIcons: Record<string, IconType> = {
-  'téléphone': FaPhone,
-  'email': FaEnvelope,
-  'secteur': FaMapMarkerAlt,
-  'facebook': FaFacebook,
+  téléphone: FaPhone,
+  email: FaEnvelope,
+  secteur: FaMapMarkerAlt,
+  facebook: FaFacebook,
 };
 
 function Contact() {
-  const tel = contact.find(c => c.label === "téléphone")
+  const tel = contact.find((c) => c.label === 'téléphone');
   return (
     <section className="contact">
       <div className="container contact-container">
