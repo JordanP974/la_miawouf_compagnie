@@ -1,4 +1,4 @@
-import { PiHeartStraight, PiHouseLine, PiMailboxLight, PiPawPrintFill, PiPottedPlantDuotone } from 'react-icons/pi';
+import { PiHeartStraight, PiHouseLine, PiPawPrintFill } from 'react-icons/pi';
 import { services } from '../../data/services';
 import type { IconType } from 'react-icons';
 import { FaCheckCircle } from 'react-icons/fa';
@@ -12,7 +12,7 @@ interface ServicesCardsProps {
   showFeatures?: boolean;
   showLink?: boolean;
   showImg?: boolean;
-  showPill?: boolean
+  showPill?: boolean;
 }
 
 function ServicesCards({ showFeatures, showLink, showImg, showPill }: ServicesCardsProps) {
@@ -41,7 +41,13 @@ function ServicesCards({ showFeatures, showLink, showImg, showPill }: ServicesCa
             )}
 
             <div className="card-content">
-              {showPill ? (<span className='pill'><PiPawPrintFill/> {service.pill}</span>): ("")}
+              {showPill ? (
+                <span className="pill">
+                  <PiPawPrintFill /> {service.pill}
+                </span>
+              ) : (
+                ''
+              )}
               <h3 className="text-bordeaux service-title">{service.title}</h3>
               <p className="text-gris service-desc">{service.description}</p>
               {showFeatures && (
