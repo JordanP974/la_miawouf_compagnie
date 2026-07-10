@@ -27,7 +27,7 @@ function ServicesCards({ showFeatures, showLink, showImg, showPill }: ServicesCa
     Promenade: imgPromenade,
   };
   return (
-    <div className="services-cards services-cards--media">
+    <div className={`services-cards ${showImg ? 'services-cards--media' : ''}`}>
       {services.map((service) => {
         const Icon = serviceIcons[service.title];
         return (
