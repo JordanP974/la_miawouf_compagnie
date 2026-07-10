@@ -1,7 +1,7 @@
 import { PiPawPrintFill, PiRabbit, PiCat   } from 'react-icons/pi';
 import { FaCheckCircle } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
-import imgHero from '../../assets/img_samy.avif';
+import imgHero from '../../../assets/img_samy.avif';
 import './Hero.css';
 
 function Hero() {

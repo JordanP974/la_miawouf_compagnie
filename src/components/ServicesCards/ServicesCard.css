@@ -1,14 +1,6 @@
-/* ===== SERVICES — mobile first ===== */
-
-.services-section {
-  padding: var(--sp-16) var(--sp-4);
-}
-
-
-
 .services-cards {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: var(--sp-6);
 }
 
@@ -40,6 +32,12 @@
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
+  }
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: var(--sp-4);
   }
 }
 
@@ -78,38 +76,5 @@
   &:hover {
     gap: 12px;
     color: var(--bordeaux-vif);
-  }
-}
-
-
-.fs-card {
-  background: var(--bordeaux-light);
-  border:none;
-  .fs-icon {
-    background: var(--bordeaux-vif);
-    color: var(--blanc);}
-  
-  }
-/* ===== DESKTOP (≥ 768px) — aligné sur le breakpoint du Header/Hero ===== */
-@media (min-width: 768px) {
-  .services-section {
-    padding: var(--sp-20) var(--sp-8);
-  }
-}
-
-/* ===== DESKTOP LARGE (≥ 1024px) ===== */
-@media (min-width: 1024px) {
-  .services-section {
-    display: flex;
-    flex-direction: column;
-    padding: var(--sp-20) var(--sp-8);
-    
-  }
-  
-  .services-cards {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    
   }
 }
