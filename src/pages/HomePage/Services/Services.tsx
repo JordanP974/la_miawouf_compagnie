@@ -6,16 +6,14 @@ import type { IconType } from 'react-icons';
 import { Window } from '../../../assets/icons/Window';
 import { services, freeServices } from '../../../data/services';
 import './Services.css';
-import ServicesCards from './ServicesCards/ServicesCards';
-
-
+import ServicesCards from '../../../components/ServicesCards/ServicesCards';
 
 function Services() {
   const serviceIcons: Record<string, IconType> = {
-  Courrier: PiMailboxLight,
+    Courrier: PiMailboxLight,
     Plantes: PiPottedPlantDuotone,
     Volets: Window,
-  }
+  };
   return (
     <>
       <section className="services-section ">
@@ -27,7 +25,7 @@ function Services() {
               Des prestations adaptées à chaque animal et à chaque besoin, toujours dans le confort de son foyer.
             </p>
           </div>
-          <ServicesCards showFeatures={false} showLink={true}/>
+          <ServicesCards showFeatures={false} showLink={true} />
         </div>
       </section>
 

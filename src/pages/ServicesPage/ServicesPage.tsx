@@ -1,8 +1,8 @@
 import Pagetitle from '../../components/PageTitle/PageTitle';
-import { services } from '../../data/services';
+
 
 import './ServicePage.css';
-import ServicesCards from '../HomePage/Services/ServicesCards/ServicesCards';
+import ServicesCards from '../../components/ServicesCards/ServicesCards';
 
 function ServicesPage() {
   return (
@@ -20,8 +20,8 @@ function ServicesPage() {
             </div>
           </div>
         </section>
-        <section className="cards-section">
-          <ServicesCards showFeatures={true} showLink={false} showImg={true} />
+        <section className="cards-section ">
+          <ServicesCards showFeatures={true} showLink={false} showImg={true} showPill={true} />
         </section>
       </main>
     </>

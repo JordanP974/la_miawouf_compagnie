@@ -190,6 +190,7 @@ small {
   font-weight: 600;
   padding: 8px 16px;
   border-radius: var(--r-pill);
+  width: fit-content;
 }
 
 .badge {
