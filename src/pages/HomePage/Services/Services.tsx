@@ -1,10 +1,7 @@
-import { NavLink } from 'react-router-dom';
-import { FaArrowRightLong } from 'react-icons/fa6';
-import { FaCheckCircle } from 'react-icons/fa';
-import { PiHouseLine, PiPawPrintFill, PiHeartStraight, PiPottedPlantDuotone, PiMailboxLight } from 'react-icons/pi';
+import { PiPottedPlantDuotone, PiMailboxLight } from 'react-icons/pi';
 import type { IconType } from 'react-icons';
 import { Window } from '../../../assets/icons/Window';
-import { services, freeServices } from '../../../data/services';
+import { freeServices } from '../../../data/services';
 import './Services.css';
 import ServicesCards from '../../../components/ServicesCards/ServicesCards';
 
