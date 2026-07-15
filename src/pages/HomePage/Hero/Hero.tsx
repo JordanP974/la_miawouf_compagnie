@@ -37,7 +37,7 @@ function Hero() {
           <NavLink to={'/contact'} className={'btn-reserve'}>
             Réserver une garde
           </NavLink>
-          <NavLink to={'/contact'} className={'btn-services'}>
+          <NavLink to={'/services'} className={'btn-services'}>
             Voir les services
           </NavLink>
         </div>

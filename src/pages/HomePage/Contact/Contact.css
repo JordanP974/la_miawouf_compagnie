@@ -76,7 +76,7 @@ li::marker {
 
 @media (min-width: 768px) {
   .contact {
-    margin: var(--sp-12) 20rem var(--sp-12);
+    /* margin: var(--sp-12) 20rem var(--sp-12); */
     justify-content: center;
     
   }
