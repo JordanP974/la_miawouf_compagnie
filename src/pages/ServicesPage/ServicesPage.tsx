@@ -3,6 +3,7 @@ import Pagetitle from '../../components/PageTitle/PageTitle';
 import './ServicePage.css';
 import ServicesCards from '../../components/ServicesCards/ServicesCards';
 import Steps from './Steps/Steps';
+import Price from './Price/Price';
 
 function ServicesPage() {
   return (
@@ -26,6 +27,7 @@ function ServicesPage() {
       <section className="section-steps  ">
         <Steps />
       </section>
+      <Price/>
     </>
   );
 }
