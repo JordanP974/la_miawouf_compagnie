@@ -5,6 +5,10 @@
   justify-content: center;
 }
 
+.cards-section {
+  padding-top: 0;
+}
+
 .services-cards--media {
   display: flex;
   flex-direction: column;
@@ -15,10 +19,12 @@
   transform: none;
   box-shadow: var(--shadow); /* remet l'ombre "au repos" pour éviter un saut brutal */
 }
-
-
-
-
+.section-steps {
+  background: var(--blush);
+  justify-content: center;
+  align-items: center;
+  
+}
 
 /* ===== DESKTOP (≥ 768px) — aligné sur le breakpoint du Header/Hero ===== */
 @media (min-width: 768px) {
@@ -33,9 +39,6 @@
     border: none;
     border-bottom: 1px solid var(--bordure);
 
-      
-
-    
     .service-desc {
       width: 60%;
     }
@@ -45,7 +48,7 @@
     }
   }
 
-.service-card--media.card:hover {
+  .service-card--media.card:hover {
     box-shadow: none;
   }
 
@@ -56,7 +59,7 @@
 
 /* ===== DESKTOP LARGE (≥ 1024px) ===== */
 @media (min-width: 1024px) {
-  #main-container{
-    margin: var(--sp-margin) ;
+  .container {
+    margin: var(--sp-margin);
   }
 }
