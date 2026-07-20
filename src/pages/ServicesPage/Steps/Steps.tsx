@@ -1,13 +1,11 @@
 import { steps } from '../../../data/services';
+import SectionHeader from '../../../components/SectionHeader/SectionHeader';
 import './Steps.css';
 
 function Steps() {
   return (
     <div className="step-container ">
-      <div className="section-content container">
-        <span className="eyebrow">Comment ça marche</span>
-        <h2 className="section-title">Simple, en 4 étapes</h2>
-      </div>
+      <SectionHeader eyebrow="Comment ça marche" title="Simple, en 4 étapes" className="container" />
       <div className="steps-cards">
         {steps.map((step, index) => (
           <article className="step-card" key={index}>

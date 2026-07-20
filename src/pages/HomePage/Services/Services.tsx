@@ -4,6 +4,7 @@ import { Window } from '../../../assets/icons/Window';
 import { freeServices } from '../../../data/services';
 import './Services.css';
 import ServicesCards from '../../../components/ServicesCards/ServicesCards';
+import SectionHeader from '../../../components/SectionHeader/SectionHeader';
 
 function Services() {
   const serviceIcons: Record<string, IconType> = {
@@ -15,26 +16,25 @@ function Services() {
     <>
       <section className="services-section ">
         <div className="container">
-          <div className="section-content">
-            <span className="eyebrow">Mes services</span>
-            <h2 className="section-title">Tout ce dont votre compagnon a besoin</h2>
-            <p className="section-text">
-              Des prestations adaptées à chaque animal et à chaque besoin, toujours dans le confort de son foyer.
-            </p>
-          </div>
+          <SectionHeader
+            eyebrow="Mes services"
+            title="Tout ce dont votre compagnon a besoin"
+            text="Des prestations adaptées à chaque animal et à chaque besoin, toujours dans le confort de son foyer."
+          />
           <ServicesCards showFeatures={false} showLink={true} />
         </div>
       </section>
 
       <section className="services-section free-services">
         <div className="container">
-          <div className="section-content">
-            <span className="eyebrow fs-eyebrow">Inclus Gratuitement</span>
-            <h2 className="section-title fs-title">Je veille aussi sur votre maison</h2>
-            <p className="section-text fs-text">
-              Des prestations adaptées à chaque animal et à chaque besoin, toujours dans le confort de son foyer.
-            </p>
-          </div>
+          <SectionHeader
+            eyebrow="Inclus Gratuitement"
+            eyebrowClassName="fs-eyebrow"
+            title="Je veille aussi sur votre maison"
+            titleClassName="fs-title"
+            text="Des prestations adaptées à chaque animal et à chaque besoin, toujours dans le confort de son foyer."
+            textClassName="fs-text"
+          />
           <div className="services-cards fs-cards">
             {freeServices.map((freeService) => {
               const Icon = serviceIcons[freeService.title];

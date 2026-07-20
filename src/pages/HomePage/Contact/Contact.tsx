@@ -1,6 +1,7 @@
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebook } from 'react-icons/fa';
 import type { IconType } from 'react-icons';
 import { contact } from '../../../data/contact';
+import SectionHeader from '../../../components/SectionHeader/SectionHeader';
 import './Contact.css';
 import { NavLink } from 'react-router-dom';
 
@@ -16,12 +17,14 @@ function Contact() {
   return (
     <section className="contact">
       <div className="container contact-container">
-        <div className="section-content ">
-          <span className="eyebrow contact-eyebrow">Contact</span>
-          <h2 className="section-title contact-title">Réservez la garde de votre animal</h2>
-          <p className="section-text contact-text">
-            Une question, un devis, une réservation ? Contactez-moi, je vous réponds avec plaisir.
-          </p>
+        <SectionHeader
+          eyebrow="Contact"
+          eyebrowClassName="contact-eyebrow"
+          title="Réservez la garde de votre animal"
+          titleClassName="contact-title"
+          text="Une question, un devis, une réservation ? Contactez-moi, je vous réponds avec plaisir."
+          textClassName="contact-text"
+        >
           <div className="contact-btns ">
             <NavLink to={'/contact'} className={'btn-reserve btn-dark'}>
               Demander un devis
@@ -30,7 +33,7 @@ function Contact() {
               {tel?.content}
             </NavLink>
           </div>
-        </div>
+        </SectionHeader>
         <div className="contact-infos">
           <ul>
             {contact.map((c) => {
