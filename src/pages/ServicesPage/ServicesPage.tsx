@@ -23,6 +23,9 @@ function ServicesPage() {
         <section className="cards-section ">
           <ServicesCards showFeatures={true} showLink={false} showImg={true} showPill={true} />
         </section>
+        <section className="steps">
+          
+        </section>
       </main>
     </>
   );
