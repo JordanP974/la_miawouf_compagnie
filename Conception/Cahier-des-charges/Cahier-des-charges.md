@@ -105,7 +105,7 @@ La MiaWouf Compagnie est une activité de pet-sitting (garde et promenade d'anim
 | Élément | Statut |
 |---|---|
 | Nom de domaine | À définir avec le client (ex. lamiawoufcompagnie.fr) |
-| Hébergement | À définir (ex. Netlify, Vercel, OVH...) |
+| Hébergement |Vercel|
 | Certificat HTTPS | Requis |
 | Adresse email professionnelle | À définir (actuellement Gmail) |
 
