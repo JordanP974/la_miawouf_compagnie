@@ -2,6 +2,7 @@
 
 .services-section {
   padding: var(--sp-16) var(--sp-4);
+  justify-content: center;
 }
 
 

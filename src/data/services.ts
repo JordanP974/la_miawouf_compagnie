@@ -40,3 +40,18 @@ export const freeServices =[
     description:"Ouverture et fermeture des volets pour simuler une présence et sécuriser le logement.",
   }
 ]
+
+export const steps=[
+  {title:"Prise de contact",
+    description:"Vous m’expliquez vos besoins par téléphone ou via le formulaire.",
+  },
+  {title:"Rencontre",
+    description:"On fait connaissance avec votre animal et on cale les consignes.",
+  },
+  {title:"Garde",
+    description:"Je m’occupe de tout, chez vous, selon le rythme convenu.",
+  },
+  {title:"Des nouvelles",
+    description:"Vous recevez photos et messages, et rentrez l’esprit tranquille.",
+  }
+]
