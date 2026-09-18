@@ -1,14 +1,109 @@
+/* ===== À PROPOS — mobile first ===== */
+
 .section-about {
+  padding: var(--sp-16) var(--sp-4);
+}
+
+/* ===== CARTE PRINCIPALE ===== */
+
+.about-card {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: var(--sp-8);
+
+  background: var(--blanc);
+  border: 1px solid var(--bordure);
+  border-radius: var(--r-l);
+  box-shadow: var(--shadow);
+  padding: var(--sp-8) var(--sp-6);
+}
+
+/* ===== LOGO — cadre bordeaux derrière le logo ===== */
+
+.about-logo {
+  display: flex;
   justify-content: center;
-  gap: var(--sp-6);
-  padding-top: var(--sp-6);
-  .section-content {
-    display: flex;
-    flex-direction: column;
-    gap: var(--sp-4);
-    
+  align-items: center;
+  flex-shrink: 0;
+
+  /* le cadre bordeaux qui dépasse du logo */
+  padding: var(--sp-3);
+  background-color: var(--bordeaux);
+  border-radius: var(--r-l);
+  box-shadow: var(--shadow);
+
+  width: 100%;
+  max-width: 320px;
+}
+
+.about-logo img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+
+  /* rayon intérieur = rayon extérieur − padding, pour des coins concentriques */
+  border-radius: calc(var(--r-l) - var(--sp-3));
+}
+
+/* ===== TEXTE DE LA CARTE ===== */
+
+.about-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-4);
+}
+
+.about-card-title {
+  color: var(--bordeaux);
+  margin-bottom: var(--sp-1);
+}
+
+.about-card-content p {
+  color: var(--gris);
+}
+
+.about-signature {
+  margin-top: var(--sp-2);
+  font-style: italic;
+  font-weight: 600;
+  color: var(--bordeaux-vif);
+  text-align: center;
+}
+
+/* ===== ENGAGEMENTS ===== */
+
+.section-engagements {
+  background: var(--blush);
+  padding: var(--sp-16) var(--sp-4);
+}
+
+/* ===== TABLETTE (≥ 768px) ===== */
+
+@media (min-width: 768px) {
+  .about-card {
+    flex-direction: row;
+    align-items: center;
+    gap: var(--sp-12);
+    padding: var(--sp-12) var(--sp-8);
+    text-align: left;
+  }
+
+  .about-logo {
+    width: clamp(220px, 30vw, 300px);
+  }
+
+  .about-signature {
+    text-align: left;
+  }
+}
+
+/* ===== DESKTOP LARGE (≥ 1024px) ===== */
+
+@media (min-width: 1024px) {
+  .section-about,
+  .section-engagements {
+    padding: var(--sp-20) var(--sp-8);
   }
 }

@@ -6,7 +6,7 @@ import { NavLink } from 'react-router-dom';
 
 function About() {
   return (
-    <section className="section-about">
+    <section className="homepage-section-about">
       <div className="container about-container">
         <img className="about-picture" src={photoTroisChiens} alt="photo trois chiens" />
         <SectionHeader

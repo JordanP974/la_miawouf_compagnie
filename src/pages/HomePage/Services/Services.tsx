@@ -14,7 +14,7 @@ function Services() {
   };
   return (
     <>
-      <section className="services-section ">
+      <section className="homepage-services-section ">
         <div className="container">
           <SectionHeader
             eyebrow="Mes services"
@@ -25,7 +25,7 @@ function Services() {
         </div>
       </section>
 
-      <section className="services-section free-services">
+      <section className="section-services free-services">
         <div className="container">
           <SectionHeader
             eyebrow="Inclus Gratuitement"

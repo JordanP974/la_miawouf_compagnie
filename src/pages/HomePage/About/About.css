@@ -15,11 +15,6 @@
   box-shadow: var(--shadow);
 }
 
-.section-about .section-content {
-  text-align: left;
-  max-width: none;
-  margin: 0;
-}
 
 .btn-about {
   margin-top: var(--sp-4);
@@ -47,7 +42,7 @@
 /* ===== DESKTOP LARGE (≥ 1024px) ===== */
 
 @media (min-width: 1024px) {
-  .section-about {
+  .homepage-section-about {
     padding: var(--sp-20) var(--sp-8);
     justify-content: center;
   }
@@ -75,7 +70,7 @@
   .certif {
     font-weight: 600;
   }
-  .section-about .section-content .eyebrow {
+  .homepage-section-about .section-content .eyebrow {
     justify-content: flex-start;
   }
   .btn-about {
